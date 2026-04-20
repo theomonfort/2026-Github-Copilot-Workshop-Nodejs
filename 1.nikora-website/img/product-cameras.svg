@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="349" height="90" viewBox="0 0 349 90">
+  <rect width="349" height="90" fill="#e8f4f8"/>
+  <rect x="20" y="15" width="50" height="60" rx="5" fill="#006699"/>
+  <rect x="25" y="20" width="40" height="30" rx="2" fill="#99ccdd"/>
+  <circle cx="45" cy="35" r="10" fill="#006699"/>
+  <circle cx="45" cy="35" r="6" fill="#99ccdd"/>
+  <rect x="30" y="55" width="30" height="15" rx="2" fill="#004466"/>
+  <text x="100" y="40" fill="#006699" font-family="Arial" font-size="14" font-weight="bold">IMAGING DEVICES</text>
+  <text x="100" y="58" fill="#666" font-family="Arial" font-size="11">Cameras · Lenses · Accessories</text>
+</svg>

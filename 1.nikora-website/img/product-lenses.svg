@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="349" height="90" viewBox="0 0 349 90">
+  <rect width="349" height="90" fill="#f0f5e8"/>
+  <circle cx="45" cy="45" r="25" fill="#4a7c3f" opacity="0.8"/>
+  <circle cx="45" cy="45" r="18" fill="#6ba358"/>
+  <circle cx="45" cy="45" r="10" fill="#8cc474"/>
+  <circle cx="45" cy="45" r="4" fill="#4a7c3f"/>
+  <text x="100" y="40" fill="#4a7c3f" font-family="Arial" font-size="14" font-weight="bold">FIELD OPTICS</text>
+  <text x="100" y="58" fill="#666" font-family="Arial" font-size="11">Binoculars · Spotting Scopes</text>
+</svg>

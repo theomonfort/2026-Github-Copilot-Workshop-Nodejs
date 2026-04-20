@@ -1,0 +1,126 @@
+/* Nikora Corporation - 2008 era stylesheet */
+/* Intentionally uses outdated CSS patterns for workshop refactoring exercise */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+a { color: #006699; text-decoration: none; }
+a:hover { color: #0099cc; text-decoration: underline; }
+
+#toAnchors { display: none; }
+
+/* Header */
+#headerArea {
+  width: 760px;
+  margin: 0 auto;
+  padding: 10px 0;
+  height: 68px;
+  position: relative;
+}
+
+#headerBrandSymbol {
+  float: left;
+}
+#headerBrandSymbol a { text-decoration: none; }
+
+#headerSiteRegion {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+#headerSearchBox {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+#headerSearchBox fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#headerSearchBox legend { display: none; }
+
+#headerSearchBox .query {
+  border: 1px solid #999999;
+  width: 150px;
+  height: 18px;
+  font-size: 11px;
+  padding: 1px 3px;
+  vertical-align: middle;
+}
+
+#headerSearchBox .button {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Main Navigation */
+#mainNavigation1 {
+  width: 760px;
+  margin: 0 auto;
+  background-color: #006699;
+  height: 28px;
+}
+
+#mainNavigation1 table { height: 28px; }
+#mainNavigation1 td { padding: 0; }
+#mainNavigation1 img { display: block; }
+
+#mainNavigation2 {
+  width: 760px;
+  margin: 0 auto;
+  background-color: #e8e8e8;
+  height: 23px;
+  border-bottom: 1px solid #cccccc;
+}
+
+#mainNavigation2 table { height: 23px; }
+#mainNavigation2 td { padding: 0 5px; }
+#mainNavigation2 img { display: block; }
+
+/* Divider */
+hr.divider {
+  display: none;
+}
+
+/* Content Area */
+#contentsArea {
+  width: 760px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.section1 {}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  padding: 0 0 5px 0;
+  border-bottom: 2px solid #006699;
+}
+
+.content1 {}
+
+/* Footer */
+#footerArea {
+  width: 760px;
+  margin: 0 auto;
+  padding: 15px 0;
+  border-top: 1px solid #cccccc;
+}
+
+#footerArea a { color: #666666; font-size: 11px; }
+#footerArea a:hover { color: #006699; }
+
+/* Rollover class */
+.rollover { cursor: pointer; }

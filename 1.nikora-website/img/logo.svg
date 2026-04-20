@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">
+  <circle cx="34" cy="34" r="30" fill="#006699" stroke="#004466" stroke-width="2"/>
+  <text x="34" y="28" text-anchor="middle" fill="white" font-family="Arial" font-size="10" font-weight="bold">NIKORA</text>
+  <circle cx="34" cy="42" r="8" fill="none" stroke="white" stroke-width="1.5"/>
+  <circle cx="34" cy="42" r="4" fill="white"/>
+</svg>

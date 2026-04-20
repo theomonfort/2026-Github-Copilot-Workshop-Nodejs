@@ -1,0 +1,23 @@
+{
+  "name": "Node.js",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-20",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vsls-contrib.codetour",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ritwickdey.LiveServer"
+      ],
+      "settings": {
+        "github.copilot.chat.mcp.discovery.enabled": true,
+        "liveServer.settings.port": 5500
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "forwardPorts": [5500],
+  "postCreateCommand": "gh extension install github/gh-copilot || true && cd 1.nikora-website && npm install"
+}
