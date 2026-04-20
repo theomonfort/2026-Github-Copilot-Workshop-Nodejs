@@ -27,7 +27,7 @@
 ### レガシーPHPサイトの起動
 
 ```bash
-cd 1.hikari-legacy-php
+cd hikari-legacy-php
 php -S localhost:8080
 ```
 
@@ -35,7 +35,7 @@ Codespace が自動的にポート **8080** を転送します。**「Open in Br
 
 ## 🕸️ 中身について
 
-`1.hikari-legacy-php/` フォルダには、意図的にひどいコードで書かれた2005年代のアフターサービスポータルが含まれています：
+`hikari-legacy-php/` フォルダには、意図的にひどいコードで書かれた2005年代のアフターサービスポータルが含まれています：
 
 - 🐛 **SQLインジェクション** が至る所に（入力値のサニタイズなし）
 - 💀 **`mysql_*` 関数** の使用（PHP 7.0で廃止済み）
@@ -47,7 +47,7 @@ Codespace が自動的にポート **8080** を転送します。**「Open in Br
 ## 📁 構成
 
 ```
-1.hikari-legacy-php/
+hikari-legacy-php/
 ├── config.php        # DB設定（パスワードハードコード 💀）
 ├── index.php         # トップページ（訪問者カウンター付き）
 ├── contact.php       # お問い合わせフォーム（SQLインジェクションのデモ）
