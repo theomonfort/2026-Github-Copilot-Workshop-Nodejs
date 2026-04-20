@@ -86,5 +86,3 @@ Codespaces の料金は **$0.18/hour**（2-core マシン）です。
 | **合計概算** | **$162.00** |
 
 > 📊 詳細な料金シミュレーションは [GitHub Pricing Calculator](https://github.com/pricing/calculator) をご利用ください。
->
-> 💡 **ヒント**: Codespaces はアイドル状態で自動停止するため、実際の料金は上記より低くなる場合があります。Organization Settings で **idle timeout**（デフォルト30分）を設定し、コストを最適化できます。
