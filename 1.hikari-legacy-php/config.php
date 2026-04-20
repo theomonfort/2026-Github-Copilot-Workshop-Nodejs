@@ -7,14 +7,17 @@ $db_user = "root";
 $db_pass = "hikari2005";
 $db_name = "hikari_sav";
 
-$conn = mysql_connect($db_host, $db_user, $db_pass);
-if (!$conn) {
-    die("Erreur de connexion: " . mysql_error());
+// NOTE: mysql_* functions removed in PHP 7.0+
+// This legacy code requires PHP 4.3-5.6 to fully work
+// Connection will silently fail on modern PHP (no DB = fallback to hardcoded data)
+$conn = false;
+if (function_exists('mysql_connect')) {
+    $conn = @mysql_connect($db_host, $db_user, $db_pass);
+    if ($conn) {
+        mysql_select_db($db_name, $conn);
+        mysql_query("SET NAMES 'utf8'");
+    }
 }
-mysql_select_db($db_name, $conn);
-
-// Set charset
-mysql_query("SET NAMES 'utf8'");
 
 // Visitor counter
 function incrementVisitorCount() {

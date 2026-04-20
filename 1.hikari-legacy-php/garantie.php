@@ -12,12 +12,25 @@ if (isset($_POST['serial'])) {
     
     // Query database for warranty info
     $sql = "SELECT * FROM product_registrations WHERE serial_number = '$serial'";
-    $result = mysql_query($sql);
     
-    if ($result && mysql_num_rows($result) > 0) {
-        $warranty_result = mysql_fetch_assoc($result);
+    if (function_exists('mysql_query') && $conn) {
+        $result = mysql_query($sql);
+        if ($result && mysql_num_rows($result) > 0) {
+            $warranty_result = mysql_fetch_assoc($result);
+        } else {
+            $warranty_result = "not_found";
+        }
     } else {
-        $warranty_result = "not_found";
+        // Fallback demo data when no DB
+        $demo_products = array(
+            'SN-2005-00142' => array('product_name' => 'LUMINA LM-32X600E', 'purchase_date' => '2005-06-15', 'warranty_end' => '2007-06-15'),
+            'SN-2005-00287' => array('product_name' => 'IonPure IP-Y30EU', 'purchase_date' => '2005-09-20', 'warranty_end' => '2007-09-20'),
+        );
+        if (isset($demo_products[$serial])) {
+            $warranty_result = $demo_products[$serial];
+        } else {
+            $warranty_result = "not_found";
+        }
     }
 }
 ?>

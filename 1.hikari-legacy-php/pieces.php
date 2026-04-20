@@ -29,11 +29,13 @@ if (isset($_GET['ref']) || isset($_GET['category'])) {
     }
     
     $sql = "SELECT * FROM spare_parts $where ORDER BY category, reference";
-    $result = mysql_query($sql);
     
-    if ($result) {
-        while ($row = mysql_fetch_assoc($result)) {
-            $search_results[] = $row;
+    if (function_exists('mysql_query') && $conn) {
+        $result = mysql_query($sql);
+        if ($result) {
+            while ($row = mysql_fetch_assoc($result)) {
+                $search_results[] = $row;
+            }
         }
     }
 }
