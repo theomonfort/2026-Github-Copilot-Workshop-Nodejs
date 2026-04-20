@@ -1,0 +1,19 @@
+# Hikari Denki SAV Legacy Support Portal
+# Apache Configuration
+# Don't touch this file!! - Tanaka 2005
+
+DirectoryIndex index.php index.html
+
+# Force charset
+AddDefaultCharset UTF-8
+
+# PHP settings
+php_flag display_errors on
+php_value error_reporting 2047
+
+# Prevent directory listing
+Options -Indexes
+
+# Custom error pages (TODO: make these someday)
+ErrorDocument 404 /index.php
+ErrorDocument 500 /index.php

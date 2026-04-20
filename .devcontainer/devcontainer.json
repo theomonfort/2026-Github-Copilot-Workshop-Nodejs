@@ -1,5 +1,5 @@
 {
-  "name": "Node.js",
+  "name": "Node.js & PHP Workshop",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:0-20",
   "customizations": {
     "vscode": {
@@ -16,8 +16,11 @@
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/php:1": {
+      "version": "8.1"
+    }
   },
-  "forwardPorts": [5500],
+  "forwardPorts": [5500, 8080],
   "postCreateCommand": "gh extension install github/gh-copilot || true && cd 1.nikora-website && npm install"
 }
