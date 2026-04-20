@@ -22,5 +22,5 @@
     }
   },
   "forwardPorts": [5500, 8080],
-  "postCreateCommand": "gh extension install github/gh-copilot || true && cd 1.nikora-website && npm install"
+  "postCreateCommand": "gh extension install github/gh-copilot || true && npx playwright install chrome || true"
 }
