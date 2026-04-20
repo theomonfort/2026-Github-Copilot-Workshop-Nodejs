@@ -1,7 +1,7 @@
 <?php
-// Hikari Denki SAV - Page d'accueil
-// Copyright (C) 2005 Hikari Denki Corporation
-// Maintainer: webmaster@hikari-denki.co.jp
+// ヒカリ電機 カスタマーサポート - トップページ
+// Copyright (C) 2005 ヒカリ電機株式会社
+// 管理者: webmaster@hikari-denki.co.jp
 
 require_once("config.php");
 $visitor_count = incrementVisitorCount();
@@ -10,7 +10,7 @@ $visitor_count = incrementVisitorCount();
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>★ HIKARI DENKI SAV - Service Après-Vente ★ Bienvenue!</title>
+    <title>★ ヒカリ電機 カスタマーサポート ★ ようこそ！</title>
     <style>
         body {
             background-color: #C0C0C0;
@@ -127,170 +127,183 @@ $visitor_count = incrementVisitorCount();
 <body>
 
 <table class="main-table" cellpadding="0" cellspacing="0">
-    <!-- Header -->
+    <!-- ヘッダー -->
     <tr>
         <td colspan="2" class="header-cell">
-            <img src="images/hikari_logo.gif" alt="HIKARI DENKI" width="150" height="50"><br>
-            <h1>★ Service Après-Vente ★</h1>
-            <font size="2">ヒカリ電機 アフターサービス</font>
+            <img src="images/hikari_logo.gif" alt="ヒカリ電機" width="150" height="50"><br>
+            <h1>★ カスタマーサポート ★</h1>
+            <font size="2">ヒカリ電機株式会社 サポートポータル</font>
         </td>
     </tr>
 
-    <!-- Marquee -->
+    <!-- マーキー -->
     <tr>
         <td colspan="2" style="background-color: #FFFFCC; padding: 5px;">
             <marquee behavior="scroll" direction="left" scrollamount="3">
-                ★ Bienvenue sur le portail SAV Hikari Denki ! ★ Nos techniciens sont à votre service du lundi au vendredi ★ 
-                新製品情報はこちら ★ Nouveau: Support pour les purificateurs d'air IonPure ! ★
+                ★ ヒカリ電機カスタマーサポートポータルへようこそ！ ★ 経験豊富な技術者が月曜〜金曜で対応いたします ★ 
+                新製品情報はこちら ★ 新着：空気清浄機 IonPure シリーズのサポート開始！ ★ デジタルカメラ HK-D500 好評発売中！ ★
             </marquee>
         </td>
     </tr>
 
-    <!-- Navigation -->
+    <!-- ナビゲーション -->
     <tr>
         <td colspan="2" class="nav-bar">
-            <a href="index.php">🏠 Accueil</a> | 
-            <a href="faq.php">❓ FAQ</a> | 
-            <a href="contact.php">✉️ Contact</a> | 
-            <a href="pieces.php">🔧 Pièces détachées</a> |
-            <a href="garantie.php">📋 Garantie</a>
+            <a href="index.php">🏠 ホーム</a> | 
+            <a href="faq.php">❓ よくあるご質問</a> | 
+            <a href="contact.php">✉️ お問い合わせ</a> | 
+            <a href="pieces.php">🔧 部品カタログ</a> |
+            <a href="garantie.php">📋 保証について</a>
         </td>
     </tr>
 
-    <!-- Main content -->
+    <!-- メインコンテンツ -->
     <tr>
-        <!-- Content area -->
+        <!-- コンテンツエリア -->
         <td class="content-cell" valign="top">
             
             <center>
-                <img src="images/welcome.gif" alt="Bienvenue" width="200" height="30">
+                <img src="images/welcome.gif" alt="ようこそ" width="200" height="30">
             </center>
 
             <hr>
 
-            <h2><font color="#000080">📞 Nous contacter</font></h2>
+            <h2><font color="#000080">📞 お問い合わせ</font></h2>
 
             <table class="info-table">
                 <tr>
-                    <th colspan="2">Hotline Consommateurs</th>
+                    <th colspan="2">カスタマーサポート窓口</th>
                 </tr>
                 <tr>
-                    <td width="40%"><b>Téléphone :</b></td>
+                    <td width="40%"><b>電話番号：</b></td>
                     <td>
-                        <font size="4" color="#FF0000"><b>0 809 10 15 15</b></font>
-                        <br><font size="1">(appel non surtaxé)</font>
+                        <font size="4" color="#FF0000"><b>0120-XXX-XXX</b></font>
+                        <br><font size="1">（フリーダイヤル・通話料無料）</font>
                     </td>
                 </tr>
                 <tr>
-                    <td><b>Horaires :</b></td>
+                    <td><b>受付時間：</b></td>
                     <td>
-                        Lundi - Vendredi : 9h00 〜 18h30<br>
-                        Samedi : 9h00 〜 17h30<br>
-                        <font size="1" color="#FF0000">※ Fermé les dimanches et jours fériés</font>
+                        月〜金：9:00〜18:30<br>
+                        土：9:00〜17:30<br>
+                        <font size="1" color="#FF0000">※ 日曜・祝日：休業</font>
                     </td>
                 </tr>
                 <tr>
-                    <td><b>E-mail :</b></td>
+                    <td><b>メール：</b></td>
                     <td>
-                        <a href="mailto:helpdesk@hikari-denki.co.jp">helpdesk@hikari-denki.co.jp</a>
+                        <a href="mailto:support@hikari-denki.co.jp">support@hikari-denki.co.jp</a>
                     </td>
                 </tr>
                 <tr>
-                    <td><b>Fax :</b></td>
+                    <td><b>FAX：</b></td>
                     <td>03-XXXX-XXXX</td>
                 </tr>
             </table>
 
             <br>
 
-            <h2><font color="#000080">📋 Nos Services</font></h2>
+            <h2><font color="#000080">📋 サービス一覧</font></h2>
             <ul>
-                <li>Réparation de téléviseurs LCD LUMINA</li>
-                <li>Entretien des purificateurs d'air IonPure <span class="new-icon">NEW!</span></li>
-                <li>Réparation de micro-ondes et fours</li>
-                <li>Service pour imprimantes et copieurs</li>
-                <li>Pièces détachées pour tous modèles</li>
+                <li>📷 デジタルカメラ・レンズの修理 <span class="new-icon">NEW!</span></li>
+                <li>📺 液晶テレビ LUMINA シリーズの修理</li>
+                <li>🌬️ 空気清浄機 IonPure のメンテナンス</li>
+                <li>🍳 電子レンジ・オーブンの修理</li>
+                <li>🖨️ コピー機・プリンターのサービス</li>
+                <li>🚗 自動車用センサー・車載機器のサポート <span class="new-icon">NEW!</span></li>
+                <li>🔬 医療機器のメンテナンス</li>
+                <li>⚙️ 半導体製造装置のサービス</li>
+                <li>🔧 全製品の部品販売・交換</li>
             </ul>
 
             <hr>
 
-            <h2><font color="#000080">📢 Actualités</font></h2>
+            <h2><font color="#000080">📢 お知らせ</font></h2>
             <table width="100%" border="0" cellpadding="3">
                 <tr>
                     <td width="100"><font size="2" color="#808080">2006/03/15</font></td>
-                    <td><a href="#">Nouveau service de réparation express</a> <span class="new-icon">NEW!</span></td>
+                    <td><a href="#">エクスプレス修理サービス開始のお知らせ</a> <span class="new-icon">NEW!</span></td>
                 </tr>
                 <tr>
                     <td><font size="2" color="#808080">2006/02/28</font></td>
-                    <td><a href="#">Mise à jour du catalogue de pièces détachées</a></td>
+                    <td><a href="#">部品カタログを更新しました</a></td>
+                </tr>
+                <tr>
+                    <td><font size="2" color="#808080">2006/02/01</font></td>
+                    <td><a href="#">デジタルカメラ HK-D500 サポート開始</a> <span class="new-icon">NEW!</span></td>
                 </tr>
                 <tr>
                     <td><font size="2" color="#808080">2006/01/10</font></td>
-                    <td><a href="#">Horaires spéciaux pour les fêtes de fin d'année</a></td>
+                    <td><a href="#">年末年始の営業時間のお知らせ</a></td>
                 </tr>
                 <tr>
                     <td><font size="2" color="#808080">2005/11/20</font></td>
-                    <td><a href="#">Lancement du support IonPure</a></td>
+                    <td><a href="#">IonPure シリーズのサポート開始</a></td>
+                </tr>
+                <tr>
+                    <td><font size="2" color="#808080">2005/09/01</font></td>
+                    <td><a href="#">車載機器サポート窓口を新設しました</a></td>
                 </tr>
             </table>
 
         </td>
 
-        <!-- Sidebar -->
+        <!-- サイドバー -->
         <td class="sidebar">
-            <h3>🔗 Liens utiles</h3>
+            <h3>🔗 関連リンク</h3>
             <ul style="padding-left: 15px;">
-                <li><a href="http://www.hikari-denki.co.jp">Hikari Denki Japan</a></li>
-                <li><a href="http://www.hikari-denki.eu">Hikari Denki Europe</a></li>
-                <li><a href="#">Manuel utilisateur</a></li>
-                <li><a href="#">Enregistrer produit</a></li>
+                <li><a href="http://www.hikari-denki.co.jp">ヒカリ電機 Japan</a></li>
+                <li><a href="#">製品マニュアル</a></li>
+                <li><a href="#">製品登録</a></li>
+                <li><a href="#">ドライバダウンロード</a></li>
             </ul>
 
-            <h3>📊 Compteur</h3>
+            <h3>📊 アクセスカウンター</h3>
             <center>
-                <font size="1">Vous êtes le visiteur n°</font><br>
+                <font size="1">あなたは</font><br>
                 <span class="counter"><?php echo str_pad($visitor_count, 6, "0", STR_PAD_LEFT); ?></span>
+                <br><font size="1">番目のお客様です</font>
                 <br><br>
-                <img src="images/under_construction.gif" alt="En construction" width="100">
+                <img src="images/under_construction.gif" alt="工事中" width="100">
                 <br>
                 <font size="1" color="#FF0000">
-                    <b>Site en amélioration<br>permanente!</b>
+                    <b>サイト改善中！</b>
                 </font>
             </center>
 
-            <h3>🕐 Horaires SAV</h3>
+            <h3>🕐 サポート受付時間</h3>
             <font size="2">
-                Lun-Ven: 9h-18h30<br>
-                Sam: 9h-17h30<br>
-                Dim: <font color="red">Fermé</font>
+                月〜金: 9:00〜18:30<br>
+                土: 9:00〜17:30<br>
+                日祝: <font color="red">休業</font>
             </font>
 
             <br><br>
             <center>
-                <img src="images/email_anim.gif" alt="Email" width="50">
+                <img src="images/email_anim.gif" alt="メール" width="50">
                 <br>
-                <a href="contact.php"><font size="2">Contactez-nous!</font></a>
+                <a href="contact.php"><font size="2">お問い合わせはこちら！</font></a>
             </center>
 
             <br>
             <center>
                 <font size="1" color="#808080">
-                    Dernière mise à jour:<br>
+                    最終更新日:<br>
                     <?php echo japanese_date(time()); ?>
                 </font>
             </center>
         </td>
     </tr>
 
-    <!-- Footer -->
+    <!-- フッター -->
     <tr>
         <td colspan="2" class="footer-cell">
             <font size="1">
-                Copyright &copy; 2005-2006 Hikari Denki Corporation. All Rights Reserved.<br>
+                Copyright &copy; 2005-2006 ヒカリ電機株式会社 All Rights Reserved.<br>
                 このサイトはヒカリ電機株式会社が運営しています。<br>
-                Best viewed with Internet Explorer 6.0 | Resolution: 800x600<br>
-                <img src="images/ie_logo.gif" alt="Best with IE" width="80" height="15">
-                <img src="images/netscape_logo.gif" alt="Netscape OK" width="80" height="15">
+                Best viewed with Internet Explorer 6.0 | 推奨解像度: 800x600<br>
+                <img src="images/ie_logo.gif" alt="IE推奨" width="80" height="15">
+                <img src="images/netscape_logo.gif" alt="Netscape対応" width="80" height="15">
             </font>
         </td>
     </tr>

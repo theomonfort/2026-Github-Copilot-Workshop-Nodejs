@@ -1,19 +1,19 @@
-# Hikari Denki SAV Legacy Support Portal
-# Apache Configuration
-# Don't touch this file!! - Tanaka 2005
+# ヒカリ電機 カスタマーサポート レガシーポータル
+# Apache設定ファイル
+# このファイルを変更しないでください！ - 田中 2005年
 
 DirectoryIndex index.php index.html
 
-# Force charset
+# 文字コード強制設定
 AddDefaultCharset UTF-8
 
-# PHP settings
+# PHP設定
 php_flag display_errors on
 php_value error_reporting 2047
 
-# Prevent directory listing
+# ディレクトリ一覧の非表示
 Options -Indexes
 
-# Custom error pages (TODO: make these someday)
+# カスタムエラーページ（いつか作る予定…）
 ErrorDocument 404 /index.php
 ErrorDocument 500 /index.php

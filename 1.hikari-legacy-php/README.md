@@ -1,39 +1,51 @@
-# Hikari Denki SAV - Service Après-Vente Portal
-# ヒカリ電機 アフターサービス ポータル
+# ヒカリ電機 カスタマーサポートポータル
+# ★ レガシーシステム ★
 
-## ⚠️ LEGACY CODE - DO NOT MODIFY ⚠️
+## ⚠️ レガシーコード — 変更禁止 ⚠️
 
-This is the Hikari Denki After-Sales Service (SAV) portal website.  
-Built in **2005** by the Hikari Denki IT team (Tanaka-san, Suzuki-san, Yamamoto-san, Nakamura-san).
+ヒカリ電機カスタマーサポートポータルサイトです。
+**2005年**にヒカリ電機IT部門（田中、鈴木、山本、中村）が開発しました。
 
-### Requirements
-- PHP 4.3+ (tested on PHP 5.0)
+### 対応製品カテゴリ
+- 📷 デジタルカメラ・レンズ
+- 📺 液晶テレビ LUMINAシリーズ
+- 🌬️ 空気清浄機 IonPureシリーズ
+- 🍳 電子レンジ・オーブン
+- 🖨️ コピー機・プリンター
+- 🚗 自動車用センサー・車載機器
+- 🔬 医療機器
+- ⚙️ 半導体製造装置
+
+### 動作環境
+- PHP 4.3以上（PHP 5.0でテスト済み）
 - MySQL 4.1
-- Apache 1.3 with mod_php
-- Internet Explorer 6.0+ (Netscape 7 partially supported)
-- Screen resolution: 800x600 minimum
+- Apache 1.3 + mod_php
+- Internet Explorer 6.0以上（Netscape 7は一部対応）
+- 画面解像度: 800x600以上
 
-### Installation
-1. Copy files to `/var/www/html/hikari-sav/`
-2. Import `database.sql` into MySQL
-3. Update `config.php` with your database credentials
-4. Make sure `counter.txt` is writable by Apache (`chmod 666 counter.txt`)
-5. Place image files in `images/` directory
+### インストール手順
+1. ファイルを `/var/www/html/hikari-sav/` にコピー
+2. `database.sql` をMySQLにインポート
+3. `config.php` のデータベース接続情報を更新
+4. `counter.txt` にApacheの書き込み権限を付与（`chmod 666 counter.txt`）
+5. 画像ファイルを `images/` ディレクトリに配置
 
-### Pages
-- `index.php` - Homepage with contact info and news
-- `faq.php` - Frequently Asked Questions (hardcoded)
-- `contact.php` - Contact form (saves to database + sends email)
-- `pieces.php` - Spare parts search
-- `garantie.php` - Warranty information and verification
+### ページ構成
+- `index.php` - トップページ（連絡先・お知らせ）
+- `faq.php` - よくあるご質問（ハードコード）
+- `contact.php` - お問い合わせフォーム（DB保存＋メール送信）
+- `pieces.php` - 部品カタログ検索
+- `garantie.php` - 保証情報・保証確認
 
-### Known Issues
-- [ ] FAQ should probably use a database (TODO since 2005...)
-- [ ] Contact form has no CAPTCHA (getting lots of spam...)
-- [ ] Parts search is slow when database is large
-- [ ] Site doesn't display well in Firefox (who uses that anyway?)
-- [ ] Visitor counter resets when counter.txt gets corrupted
-- [ ] Images directory needs to be populated
+### 既知の不具合
+- [ ] FAQはデータベース化すべき（2005年からのTODO…）
+- [ ] お問い合わせフォームにCAPTCHAがない（スパムが大量に来ている…）
+- [ ] 部品検索はデータが多いと遅い
+- [ ] Firefoxで表示が崩れる（誰が使っているんだ？）
+- [ ] アクセスカウンターが counter.txt 破損時にリセットされる
+- [ ] imagesディレクトリに画像を配置する必要あり
+- [ ] SQLインジェクション対策が未実装（そのうちやる…）
+- [ ] パスワードがソースコードにハードコードされている
 
-### Last Updated
-2006-03-15 by Tanaka-san
+### 最終更新
+2006年3月15日 田中
