@@ -1,9 +1,0 @@
-{
-  "name": "nikora-website",
-  "version": "1.0.0",
-  "description": "Nikora Corporation - Product Catalog Website",
-  "scripts": {
-    "start": "npx http-server . -p 3000 -o",
-    "dev": "npx http-server . -p 3000 -c-1"
-  }
-}
