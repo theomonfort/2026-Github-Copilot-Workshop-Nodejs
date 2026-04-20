@@ -1,5 +1,5 @@
 <?php
-// ヒカリ電機 カスタマーサポート - お問い合わせフォーム
+// ヒカリ カスタマーサポート - お問い合わせフォーム
 // 作成者: 山本 (2005年)
 // 注意: フォームバリデーションはJavaScriptのみ。大丈夫なはず…
 
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $message_sent = true;
         
         // サポートチームにメール通知を送信
-        $to = "support@hikari-denki.co.jp";
+        $to = "support@hikari.co.jp";
         $headers = "From: $email\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>ヒカリ電機 カスタマーサポート - お問い合わせ</title>
+    <title>ヒカリ カスタマーサポート - お問い合わせ</title>
     <style>
         body { background-color: #C0C0C0; font-family: 'Comic Sans MS', cursive; color: #000080; background-image: url('images/bg_tile.gif'); }
         .main-table { width: 780px; margin: 0 auto; background-color: #FFFFFF; border: 3px ridge #808080; }
@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <table class="main-table" cellpadding="0" cellspacing="0">
     <tr>
         <td class="header-cell">
-            <img src="images/hikari_logo.gif" alt="ヒカリ電機" width="150" height="50"><br>
+            <img src="images/hikari_logo.gif" alt="ヒカリ" width="150" height="50"><br>
             <h1>✉️ お問い合わせ</h1>
         </td>
     </tr>
@@ -181,7 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <tr>
         <td class="footer-cell">
             <font size="1">
-                Copyright &copy; 2005-2006 ヒカリ電機株式会社 All Rights Reserved.<br>
+                Copyright &copy; 2005-2006 ヒカリ株式会社 All Rights Reserved.<br>
                 Best viewed with Internet Explorer 6.0 | 推奨解像度: 800x600
             </font>
         </td>

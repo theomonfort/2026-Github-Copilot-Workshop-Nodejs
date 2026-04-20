@@ -1,5 +1,5 @@
 <?php
-// ヒカリ電機 カスタマーサポート - 部品カタログ検索
+// ヒカリ カスタマーサポート - 部品カタログ検索
 // 作成者: 田中 (2005/06/20)
 // データベースから部品を検索
 // TODO: ページネーション追加（いつかやる）
@@ -89,7 +89,7 @@ if (count($search_results) == 0 && ($search_ref != "" || $search_category != "")
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>ヒカリ電機 カスタマーサポート - 部品カタログ</title>
+    <title>ヒカリ カスタマーサポート - 部品カタログ</title>
     <style>
         body { background-color: #C0C0C0; font-family: 'Comic Sans MS', cursive; color: #000080; background-image: url('images/bg_tile.gif'); }
         .main-table { width: 780px; margin: 0 auto; background-color: #FFFFFF; border: 3px ridge #808080; }
@@ -119,7 +119,7 @@ if (count($search_results) == 0 && ($search_ref != "" || $search_category != "")
 <table class="main-table" cellpadding="0" cellspacing="0">
     <tr>
         <td class="header-cell">
-            <img src="images/hikari_logo.gif" alt="ヒカリ電機" width="150" height="50"><br>
+            <img src="images/hikari_logo.gif" alt="ヒカリ" width="150" height="50"><br>
             <h1>🔧 部品カタログ</h1>
         </td>
     </tr>
@@ -250,7 +250,7 @@ if (count($search_results) == 0 && ($search_ref != "" || $search_category != "")
     <tr>
         <td class="footer-cell">
             <font size="1">
-                Copyright &copy; 2005-2006 ヒカリ電機株式会社 All Rights Reserved.<br>
+                Copyright &copy; 2005-2006 ヒカリ株式会社 All Rights Reserved.<br>
                 Best viewed with Internet Explorer 6.0 | 推奨解像度: 800x600
             </font>
         </td>

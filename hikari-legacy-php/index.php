@@ -1,7 +1,7 @@
 <?php
-// ヒカリ電機 カスタマーサポート - トップページ
-// Copyright (C) 2005 ヒカリ電機株式会社
-// 管理者: webmaster@hikari-denki.co.jp
+// ヒカリ カスタマーサポート - トップページ
+// Copyright (C) 2005 ヒカリ株式会社
+// 管理者: webmaster@hikari.co.jp
 
 require_once("config.php");
 $visitor_count = incrementVisitorCount();
@@ -10,7 +10,7 @@ $visitor_count = incrementVisitorCount();
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>★ ヒカリ電機 カスタマーサポート ★ ようこそ！</title>
+    <title>★ ヒカリ カスタマーサポート ★ ようこそ！</title>
     <style>
         body {
             background-color: #C0C0C0;
@@ -130,9 +130,9 @@ $visitor_count = incrementVisitorCount();
     <!-- ヘッダー -->
     <tr>
         <td colspan="2" class="header-cell">
-            <img src="images/hikari_logo.gif" alt="ヒカリ電機" width="150" height="50"><br>
+            <img src="images/hikari_logo.gif" alt="ヒカリ" width="150" height="50"><br>
             <h1>★ カスタマーサポート ★</h1>
-            <font size="2">ヒカリ電機株式会社 サポートポータル</font>
+            <font size="2">ヒカリ株式会社 サポートポータル</font>
         </td>
     </tr>
 
@@ -140,7 +140,7 @@ $visitor_count = incrementVisitorCount();
     <tr>
         <td colspan="2" style="background-color: #FFFFCC; padding: 5px;">
             <marquee behavior="scroll" direction="left" scrollamount="3">
-                ★ ヒカリ電機カスタマーサポートポータルへようこそ！ ★ 経験豊富な技術者が月曜〜金曜で対応いたします ★ 
+                ★ ヒカリカスタマーサポートポータルへようこそ！ ★ 経験豊富な技術者が月曜〜金曜で対応いたします ★ 
                 新製品情報はこちら ★ 新着：空気清浄機 IonPure シリーズのサポート開始！ ★ デジタルカメラ HK-D500 好評発売中！ ★
             </marquee>
         </td>
@@ -192,7 +192,7 @@ $visitor_count = incrementVisitorCount();
                 <tr>
                     <td><b>メール：</b></td>
                     <td>
-                        <a href="mailto:support@hikari-denki.co.jp">support@hikari-denki.co.jp</a>
+                        <a href="mailto:support@hikari.co.jp">support@hikari.co.jp</a>
                     </td>
                 </tr>
                 <tr>
@@ -252,7 +252,7 @@ $visitor_count = incrementVisitorCount();
         <td class="sidebar">
             <h3>🔗 関連リンク</h3>
             <ul style="padding-left: 15px;">
-                <li><a href="http://www.hikari-denki.co.jp">ヒカリ電機 Japan</a></li>
+                <li><a href="http://www.hikari.co.jp">ヒカリ Japan</a></li>
                 <li><a href="#">製品マニュアル</a></li>
                 <li><a href="#">製品登録</a></li>
                 <li><a href="#">ドライバダウンロード</a></li>
@@ -299,8 +299,8 @@ $visitor_count = incrementVisitorCount();
     <tr>
         <td colspan="2" class="footer-cell">
             <font size="1">
-                Copyright &copy; 2005-2006 ヒカリ電機株式会社 All Rights Reserved.<br>
-                このサイトはヒカリ電機株式会社が運営しています。<br>
+                Copyright &copy; 2005-2006 ヒカリ株式会社 All Rights Reserved.<br>
+                このサイトはヒカリ株式会社が運営しています。<br>
                 Best viewed with Internet Explorer 6.0 | 推奨解像度: 800x600<br>
                 <img src="images/ie_logo.gif" alt="IE推奨" width="80" height="15">
                 <img src="images/netscape_logo.gif" alt="Netscape対応" width="80" height="15">

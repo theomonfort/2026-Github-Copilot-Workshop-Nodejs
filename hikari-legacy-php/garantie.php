@@ -1,5 +1,5 @@
 <?php
-// ヒカリ電機 カスタマーサポート - 保証情報
+// ヒカリ カスタマーサポート - 保証情報
 // 簡単な静的ページ — DB不要
 // 中村が金曜の午後に作成 (2005/12/16)
 
@@ -41,7 +41,7 @@ if (isset($_POST['serial'])) {
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>ヒカリ電機 カスタマーサポート - 保証について</title>
+    <title>ヒカリ カスタマーサポート - 保証について</title>
     <style>
         body { background-color: #C0C0C0; font-family: 'Comic Sans MS', cursive; color: #000080; background-image: url('images/bg_tile.gif'); }
         .main-table { width: 780px; margin: 0 auto; background-color: #FFFFFF; border: 3px ridge #808080; }
@@ -64,7 +64,7 @@ if (isset($_POST['serial'])) {
 <table class="main-table" cellpadding="0" cellspacing="0">
     <tr>
         <td class="header-cell">
-            <img src="images/hikari_logo.gif" alt="ヒカリ電機" width="150" height="50"><br>
+            <img src="images/hikari_logo.gif" alt="ヒカリ" width="150" height="50"><br>
             <h1>📋 保証について</h1>
         </td>
     </tr>
@@ -80,7 +80,7 @@ if (isset($_POST['serial'])) {
     <tr>
         <td class="content-cell">
 
-            <h2><font color="#000080">📋 ヒカリ電機 保証条件</font></h2>
+            <h2><font color="#000080">📋 ヒカリ 保証条件</font></h2>
 
             <table class="warranty-table">
                 <tr>
@@ -132,7 +132,7 @@ if (isset($_POST['serial'])) {
             <ul>
                 <li>誤った使用方法または事故による損傷</li>
                 <li>消耗品（フィルター、ランプ等）の保証期間経過後の交換</li>
-                <li>ヒカリ電機認定技術者以外による修理・改造</li>
+                <li>ヒカリ認定技術者以外による修理・改造</li>
                 <li>自然災害（地震、台風、落雷、洪水等）による損傷</li>
                 <li>シリアル番号が削除または改変された製品</li>
                 <li>海外で購入された並行輸入品</li>
@@ -180,7 +180,7 @@ if (isset($_POST['serial'])) {
 
             <h2><font color="#000080">📞 部品の供給期間</font></h2>
             <p>
-                ヒカリ電機は、製品の生産終了後も以下の期間、部品を供給いたします：
+                ヒカリは、製品の生産終了後も以下の期間、部品を供給いたします：
             </p>
             <table class="warranty-table">
                 <tr><th>製品カテゴリ</th><th>生産終了後の部品供給期間</th></tr>
@@ -198,7 +198,7 @@ if (isset($_POST['serial'])) {
     <tr>
         <td class="footer-cell">
             <font size="1">
-                Copyright &copy; 2005-2006 ヒカリ電機株式会社 All Rights Reserved.<br>
+                Copyright &copy; 2005-2006 ヒカリ株式会社 All Rights Reserved.<br>
                 Best viewed with Internet Explorer 6.0 | 推奨解像度: 800x600
             </font>
         </td>

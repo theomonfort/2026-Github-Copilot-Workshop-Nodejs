@@ -1,5 +1,5 @@
 <?php
-// ヒカリ電機 カスタマーサポート - 設定ファイル
+// ヒカリ カスタマーサポート - 設定ファイル
 // 最終更新: 2006-03-15 田中
 // 注意: このファイルを本番環境で公開しないでください！
 
@@ -39,5 +39,5 @@ function japanese_date($timestamp) {
 }
 
 // サポートメールアドレス
-$support_email = "support@hikari-denki.co.jp";
+$support_email = "support@hikari.co.jp";
 ?>

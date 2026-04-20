@@ -1,10 +1,10 @@
-# 🏭 Hikari Denki - レガシーPHPワークショップ
+# 🏭 Hikari - レガシーPHPワークショップ
 
-> ヒカリ電機 - Legacy PHP Migration Workshop
+> ヒカリ - Legacy PHP Migration Workshop
 
 ## 📋 概要
 
-このリポジトリには、架空の日本の電機メーカー **ヒカリ電機**（Hikari Denki）の **レガシーPHPウェブサイト** が含まれています。**GitHub Copilot** を活用して、このレガシーPHPコードを **Node.js** アプリケーションにリファクタリングする **移行ワークショップ** の教材です。
+このリポジトリには、架空の日本メーカー **ヒカリ**（Hikari）の **レガシーPHPウェブサイト** が含まれています。**GitHub Copilot** を活用して、このレガシーPHPコードを **Node.js** アプリケーションにリファクタリングする **移行ワークショップ** の教材です。
 
 📖 **ワークショップの手順**: 講師からの配布URLをご参照ください。
 
