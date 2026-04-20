@@ -1,60 +1,60 @@
-# 🏭 Hikari Denki - Legacy PHP Workshop
+# 🏭 Hikari Denki - レガシーPHPワークショップ
 
-> ヒカリ電機 - レガシーPHPワークショップ
+> ヒカリ電機 - Legacy PHP Migration Workshop
 
-## 📋 Description
+## 📋 概要
 
-This repository contains a **legacy PHP website** for **Hikari Denki** (ヒカリ電機), a fictional Japanese electronics company. It is designed as a starting point for a **migration workshop** where participants will refactor this legacy PHP codebase into a modern **Node.js** application using **GitHub Copilot**.
+このリポジトリには、架空の日本の電機メーカー **ヒカリ電機**（Hikari Denki）の **レガシーPHPウェブサイト** が含まれています。**GitHub Copilot** を活用して、このレガシーPHPコードを **Node.js** アプリケーションにリファクタリングする **移行ワークショップ** の教材です。
 
-📖 **Workshop instructions**: ワークショップの手順は講師からの配布URLをご参照ください。
+📖 **ワークショップの手順**: 講師からの配布URLをご参照ください。
 
-## 🚀 Getting Started
+## 🚀 はじめに
 
-This repo includes a **devcontainer** pre-configured with everything you need:
+このリポジトリには、必要なツールがすべてプリインストールされた **devcontainer** が含まれています：
 
-| Tool | Version | Usage |
-|------|---------|-------|
-| **Node.js** | 20.x | Target runtime for migration |
-| **PHP** | 8.1 | Run the legacy site |
-| **GitHub CLI** | latest | Copilot CLI & GitHub integrations |
+| ツール | バージョン | 用途 |
+|--------|-----------|------|
+| **Node.js** | 20.x | 移行先のランタイム |
+| **PHP** | 8.1 | レガシーサイトの実行 |
+| **GitHub CLI** | 最新版 | Copilot CLI & GitHub連携 |
 
-### Launch a Codespace
+### Codespace の起動方法
 
-1. Click the green **"Code"** button → **"Codespaces"** → **"Create codespace on main"**
-2. Wait for the container to build (~1 min)
-3. You're ready! 🎉
+1. 緑色の **「Code」** ボタン → **「Codespaces」** → **「Create codespace on main」** をクリック
+2. コンテナのビルドを待つ（約1分）
+3. 準備完了！🎉
 
-### Run the legacy PHP site
+### レガシーPHPサイトの起動
 
 ```bash
 cd 1.hikari-legacy-php
 php -S localhost:8080
 ```
 
-The Codespace will automatically forward port **8080** — click **"Open in Browser"** to see the site.
+Codespace が自動的にポート **8080** を転送します。**「Open in Browser」** をクリックしてサイトを確認してください。
 
-## 🕸️ What's inside
+## 🕸️ 中身について
 
-The `1.hikari-legacy-php/` folder contains a 2005-era after-sales service portal with intentionally terrible code:
+`1.hikari-legacy-php/` フォルダには、意図的にひどいコードで書かれた2005年代のアフターサービスポータルが含まれています：
 
-- 🐛 **SQL injection** everywhere (unsanitized user input)
-- 💀 **`mysql_*` functions** (removed in PHP 7.0)
-- 🎨 **Comic Sans**, `<marquee>`, `<font>` tags, table-based layouts
-- 🔒 **Hardcoded credentials** in `config.php`
-- 📧 **No input validation** on forms
-- 🇫🇷🇯🇵 Bilingual French / Japanese content
+- 🐛 **SQLインジェクション** が至る所に（入力値のサニタイズなし）
+- 💀 **`mysql_*` 関数** の使用（PHP 7.0で廃止済み）
+- 🎨 **Comic Sans**、`<marquee>`、`<font>` タグ、テーブルレイアウト
+- 🔒 `config.php` に **ハードコードされたパスワード**
+- 📧 フォームの **入力バリデーションなし**
+- 🇫🇷🇯🇵 フランス語 / 日本語のバイリンガルコンテンツ
 
-## 📁 Structure
+## 📁 構成
 
 ```
 1.hikari-legacy-php/
-├── config.php        # DB config (hardcoded password 💀)
-├── index.php         # Homepage with visitor counter
-├── contact.php       # Contact form (SQL injection demo)
-├── faq.php           # FAQ (hardcoded, never migrated to DB)
-├── garantie.php      # Warranty checker
-├── pieces.php        # Spare parts search
-├── database.sql      # MySQL schema
-├── .htaccess         # Apache config
-└── images/           # GIF assets (very 2005)
+├── config.php        # DB設定（パスワードハードコード 💀）
+├── index.php         # トップページ（訪問者カウンター付き）
+├── contact.php       # お問い合わせフォーム（SQLインジェクションのデモ）
+├── faq.php           # よくある質問（ハードコード、DB移行は未完了）
+├── garantie.php      # 保証確認
+├── pieces.php        # 部品検索
+├── database.sql      # MySQLスキーマ
+├── .htaccess         # Apache設定
+└── images/           # GIF画像（2005年感満載）
 ```
