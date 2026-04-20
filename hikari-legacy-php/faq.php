@@ -5,7 +5,7 @@
 
 require_once("config.php");
 
-// FAQデータ — データベース移行が結局実現しなかったためハードコード
+// FAQデータ
 $faqs = array(
     array(
         "category" => "📷 デジタルカメラ",

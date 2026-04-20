@@ -1,8 +1,6 @@
 <?php
 // ヒカリ カスタマーサポート - 部品カタログ検索
 // 作成者: 田中 (2005/06/20)
-// データベースから部品を検索
-// TODO: ページネーション追加（いつかやる）
 
 require_once("config.php");
 
@@ -14,35 +12,15 @@ if (isset($_GET['ref']) || isset($_GET['category'])) {
     $search_ref = isset($_GET['ref']) ? $_GET['ref'] : "";
     $search_category = isset($_GET['category']) ? $_GET['category'] : "";
     
-    // クエリ構築 — ユーザー入力を直接連結して柔軟に対応
-    $where_clauses = array();
-    if ($search_ref != "") {
-        $where_clauses[] = "reference LIKE '%$search_ref%' OR product_model LIKE '%$search_ref%' OR name_jp LIKE '%$search_ref%'";
-    }
-    if ($search_category != "" && $search_category != "all") {
-        $where_clauses[] = "category = '$search_category'";
-    }
-    
-    $where = "";
-    if (count($where_clauses) > 0) {
-        $where = "WHERE " . implode(" AND ", $where_clauses);
-    }
-    
-    $sql = "SELECT * FROM spare_parts $where ORDER BY category, reference";
-    
-    if (function_exists('mysql_query') && $conn) {
-        $result = mysql_query($sql);
-        if ($result) {
-            while ($row = mysql_fetch_assoc($result)) {
                 $search_results[] = $row;
             }
         }
     }
 }
 
-// ハードコードされたカタログ（DBダウン時のフォールバック…またか）
+// 部品カタログデータ
 if (count($search_results) == 0 && ($search_ref != "" || $search_category != "")) {
-    // フォールバック用ダミーデータ
+    // 部品データ
     $all_parts = array(
         array("reference" => "LNS-MTK50", "name_jp" => "レンズマウントユニット", "category" => "camera", "product_model" => "HK-D500", "price" => "6800", "stock" => "在庫あり"),
         array("reference" => "SHTR-HKD500", "name_jp" => "シャッターユニット", "category" => "camera", "product_model" => "HK-D500", "price" => "8900", "stock" => "取り寄せ"),

@@ -1,7 +1,5 @@
 <?php
 // ヒカリ カスタマーサポート - 保証情報
-// 簡単な静的ページ — DB不要
-// 中村が金曜の午後に作成 (2005/12/16)
 
 require_once("config.php");
 
@@ -10,30 +8,18 @@ $warranty_result = null;
 if (isset($_POST['serial'])) {
     $serial = $_POST['serial'];
     
-    // データベースから保証情報を検索
-    $sql = "SELECT * FROM product_registrations WHERE serial_number = '$serial'";
-    
-    if (function_exists('mysql_query') && $conn) {
-        $result = mysql_query($sql);
-        if ($result && mysql_num_rows($result) > 0) {
-            $warranty_result = mysql_fetch_assoc($result);
-        } else {
-            $warranty_result = "not_found";
-        }
+    // 製品登録データ
+    $demo_products = array(
+        'SN-2005-00142' => array('product_name' => 'LUMINA LM-32X600', 'purchase_date' => '2005-06-15', 'warranty_end' => '2007-06-15'),
+        'SN-2005-00287' => array('product_name' => 'IonPure IP-Y30', 'purchase_date' => '2005-09-20', 'warranty_end' => '2007-09-20'),
+        'SN-2005-00401' => array('product_name' => 'HK-D500 デジタルカメラ', 'purchase_date' => '2005-11-03', 'warranty_end' => '2006-11-03'),
+        'SN-2006-00033' => array('product_name' => 'ドライブレコーダー DR-100', 'purchase_date' => '2006-01-10', 'warranty_end' => '2009-01-10'),
+        'SN-2005-00512' => array('product_name' => '電子レンジ R-642BK', 'purchase_date' => '2005-08-22', 'warranty_end' => '2007-08-22'),
+    );
+    if (isset($demo_products[$serial])) {
+        $warranty_result = $demo_products[$serial];
     } else {
-        // DB未接続時のデモ用データ
-        $demo_products = array(
-            'SN-2005-00142' => array('product_name' => 'LUMINA LM-32X600', 'purchase_date' => '2005-06-15', 'warranty_end' => '2007-06-15'),
-            'SN-2005-00287' => array('product_name' => 'IonPure IP-Y30', 'purchase_date' => '2005-09-20', 'warranty_end' => '2007-09-20'),
-            'SN-2005-00401' => array('product_name' => 'HK-D500 デジタルカメラ', 'purchase_date' => '2005-11-03', 'warranty_end' => '2006-11-03'),
-            'SN-2006-00033' => array('product_name' => 'ドライブレコーダー DR-100', 'purchase_date' => '2006-01-10', 'warranty_end' => '2009-01-10'),
-            'SN-2005-00512' => array('product_name' => '電子レンジ R-642BK', 'purchase_date' => '2005-08-22', 'warranty_end' => '2007-08-22'),
-        );
-        if (isset($demo_products[$serial])) {
-            $warranty_result = $demo_products[$serial];
-        } else {
-            $warranty_result = "not_found";
-        }
+        $warranty_result = "not_found";
     }
 }
 ?>

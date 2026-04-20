@@ -1,53 +1,13 @@
 <?php
 // ヒカリ カスタマーサポート - お問い合わせフォーム
-// 作成者: 山本 (2005年)
-// 注意: フォームバリデーションはJavaScriptのみ。大丈夫なはず…
 
 require_once("config.php");
 
 $message_sent = false;
-$error_message = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $product_ref = $_POST['product_ref'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-
-    // データベースに直接挿入 — シンプルで速い！
-    $sql = "INSERT INTO contact_messages (name, email, phone, product_ref, subject, message, created_at) 
-            VALUES ('$name', '$email', '$phone', '$product_ref', '$subject', '$message', NOW())";
-    
-    if (function_exists('mysql_query') && $conn) {
-        $result = mysql_query($sql);
-    } else {
-        $result = false; // DB接続なし
-    }
-    
-    if ($result) {
-        $message_sent = true;
-        
-        // サポートチームにメール通知を送信
-        $to = "support@hikari.co.jp";
-        $headers = "From: $email\r\n";
-        $headers .= "Reply-To: $email\r\n";
-        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-        
-        $email_body = "カスタマーサポート 新規お問い合わせ\n\n";
-        $email_body .= "お名前: $name\n";
-        $email_body .= "メール: $email\n";
-        $email_body .= "電話番号: $phone\n";
-        $email_body .= "製品型番: $product_ref\n";
-        $email_body .= "お問い合わせ種別: $subject\n\n";
-        $email_body .= "メッセージ:\n$message\n";
-        
-        @mail($to, "カスタマーサポート: $subject", $email_body, $headers);
-    } else {
-        // フォールバック: DBなしデモモードでは成功扱い
-        $message_sent = true;
-    }
+    // フォーム送信のデモ（実際にはメール送信しない）
+    $message_sent = true;
 }
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -104,10 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <font size="4" color="#006400"><b>メッセージが正常に送信されました。</b></font><br>
                     2営業日以内にご返信いたします。<br><br>
                     <a href="index.php">ホームに戻る</a>
-                </div>
-            <?php elseif ($error_message != ""): ?>
-                <div class="error-msg">
-                    <font size="3" color="#8B0000"><b>⚠️ <?php echo $error_message; ?></b></font>
                 </div>
             <?php endif; ?>
 
