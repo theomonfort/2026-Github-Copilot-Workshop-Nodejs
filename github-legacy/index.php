@@ -184,6 +184,38 @@
                 ・<a href="https://docs.github.com/en/copilot/github-copilot-in-the-cli" target="_blank">公式ドキュメント</a>
             </div>
 
+            <!-- MCP Server -->
+            <div class="feature-header" onclick="toggleFeature('mcp')">
+                🔌 MCP Server（Model Context Protocol）
+            </div>
+            <div class="feature-detail" id="mcp">
+                <b>概要:</b> Model Context Protocol (MCP) は、AIモデルに外部ツールやデータソースへのアクセスを提供するオープンプロトコルです。MCP Server を追加することで、Copilot の機能を拡張できます。<br><br>
+                <b>主なMCP Server:</b><br>
+                ・<b>GitHub MCP Server</b> — リポジトリ、Issue、PR、ブランチ情報へのアクセス<br>
+                ・<b>Playwright MCP Server</b> — ブラウザ操作、スクリーンショット、E2Eテスト<br>
+                ・<b>データベース MCP Server</b> — SQL実行、スキーマ参照<br>
+                ・<b>Fetch MCP Server</b> — 外部API・ウェブページへのアクセス<br><br>
+                <b>設定場所:</b> <code>.vscode/mcp.json</code><br><br>
+                <b>リンク:</b><br>
+                ・<a href="https://modelcontextprotocol.io/" target="_blank">MCP 公式サイト</a><br>
+                ・<a href="https://github.com/modelcontextprotocol/servers" target="_blank">MCP Servers 一覧</a>
+            </div>
+
+            <!-- Harness Engineering -->
+            <div class="feature-header" onclick="toggleFeature('harness')">
+                🏗️ Harness Engineering（ハーネスエンジニアリング）
+            </div>
+            <div class="feature-detail" id="harness">
+                <b>概要:</b> Harness Engineering とは、AIエージェントが最大限の能力を発揮できるように、プロジェクトの構造・指示・コンテキストを整備する技術です。AIを「手綱（ハーネス）」で導くように、適切な環境を構築します。<br><br>
+                <b>主な実践:</b><br>
+                ・<b>Instruction File</b> — プロジェクトのルール・制約をAIに伝える<br>
+                ・<b>Skills</b> — ドメイン知識をAIに提供<br>
+                ・<b>MCP Server</b> — 外部ツールとの接続を整備<br>
+                ・<b>Plan Mode</b> — 実装前に計画を立てさせる<br>
+                ・<b>コンテキスト管理</b> — 必要な情報を適切なタイミングでAIに提供<br><br>
+                <b>ポイント:</b> AIの能力は同じでも、ハーネスの質によって結果が大きく変わります。良いハーネスエンジニアリングは、AIの出力品質を劇的に向上させます。
+            </div>
+
             <hr>
 
             <!-- FAQ -->
