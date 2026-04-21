@@ -59,7 +59,7 @@
             <a href="#about">AI駆動開発とは</a> | 
             <a href="#features">機能紹介</a> | 
             <a href="#faq">よくあるご質問</a> | 
-            <a href="#tips">Tips</a>
+            <a href="#tips">おすすめリソース</a>
         </td>
     </tr>
 
@@ -239,30 +239,82 @@
 
             <hr>
 
-            <!-- Tips -->
+            <!-- おすすめリソース -->
             <a name="tips"></a>
-            <div class="section-title">💡 Tips — 実践的なアドバイス</div>
+            <div class="section-title">📦 おすすめリソース — awesome-copilot から導入</div>
             <br>
+            <p>
+                <a href="https://github.com/github/awesome-copilot" target="_blank"><b>github/awesome-copilot</b></a> リポジトリには、
+                コミュニティが作成した Skills、Custom Agent、Agentic Workflow が公開されています。<br>
+                以下のコマンドでプロジェクトに簡単に追加できます。
+            </p>
 
-            <div class="tip-box">
-                <b>Tip 1:</b> プロンプトは具体的に書く。「テストを書いて」より「Vitest で ProductCard コンポーネントの props バリデーションテストを書いて」の方が良い結果が得られます。
-            </div>
+            <font size="3" color="#000080"><b>🛠️ おすすめ Skills</b></font>
+            <table class="info-table">
+                <tr><th>Skill 名</th><th>説明</th><th>インストールコマンド</th></tr>
+                <tr>
+                    <td><a href="https://github.com/github/awesome-copilot/tree/main/skills/acquire-codebase-knowledge" target="_blank">acquire-codebase-knowledge</a></td>
+                    <td>コードベースの理解を深めるスキル</td>
+                    <td><code>gh copilot skill install acquire-codebase-knowledge</code></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/github/awesome-copilot/tree/main/skills/add-educational-comments" target="_blank">add-educational-comments</a></td>
+                    <td>教育的なコメントを自動追加</td>
+                    <td><code>gh copilot skill install add-educational-comments</code></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/github/awesome-copilot/tree/main/skills/architecture-blueprint-generator" target="_blank">architecture-blueprint-generator</a></td>
+                    <td>アーキテクチャ図の自動生成</td>
+                    <td><code>gh copilot skill install architecture-blueprint-generator</code></td>
+                </tr>
+            </table>
 
-            <div class="tip-box">
-                <b>Tip 2:</b> <code>copilot-instructions.md</code> にプロジェクトのルールを書いておくと、毎回同じ指示を繰り返す必要がなくなります。
-            </div>
+            <br>
+            <font size="3" color="#000080"><b>🤖 おすすめ Custom Agent</b></font>
+            <table class="info-table">
+                <tr><th>Agent 名</th><th>説明</th><th>インストールコマンド</th></tr>
+                <tr>
+                    <td><a href="https://github.com/github/awesome-copilot/blob/main/agents/accessibility.agent.md" target="_blank">accessibility</a></td>
+                    <td>アクセシビリティチェック・改善エージェント</td>
+                    <td><code>gh copilot agent install accessibility</code></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/github/awesome-copilot/blob/main/agents/api-architect.agent.md" target="_blank">api-architect</a></td>
+                    <td>API設計・レビューエージェント</td>
+                    <td><code>gh copilot agent install api-architect</code></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/github/awesome-copilot/blob/main/agents/Thinking-Beast-Mode.agent.md" target="_blank">Thinking-Beast-Mode</a></td>
+                    <td>徹底的に考え抜く自律型コーディングエージェント</td>
+                    <td><code>gh copilot agent install Thinking-Beast-Mode</code></td>
+                </tr>
+            </table>
 
-            <div class="tip-box">
-                <b>Tip 3:</b> 大きなタスクは Plan Mode で計画を立ててから実装しましょう。一度に全部やろうとするとエラーが増えます。
-            </div>
+            <br>
+            <font size="3" color="#000080"><b>⚡ おすすめ Agentic Workflow</b></font>
+            <table class="info-table">
+                <tr><th>Workflow 名</th><th>説明</th><th>インストールコマンド</th></tr>
+                <tr>
+                    <td><a href="https://github.com/github/awesome-copilot/blob/main/workflows/daily-issues-report.md" target="_blank">daily-issues-report</a></td>
+                    <td>毎日のIssueレポートを自動生成</td>
+                    <td><code>gh copilot workflow install daily-issues-report</code></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/github/awesome-copilot/blob/main/workflows/relevance-check.md" target="_blank">relevance-check</a></td>
+                    <td>PRの関連性チェック</td>
+                    <td><code>gh copilot workflow install relevance-check</code></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/github/awesome-copilot/blob/main/workflows/ospo-org-health.md" target="_blank">ospo-org-health</a></td>
+                    <td>Organizationの健全性レポート</td>
+                    <td><code>gh copilot workflow install ospo-org-health</code></td>
+                </tr>
+            </table>
 
-            <div class="tip-box">
-                <b>Tip 4:</b> 複数のモデルでレビューすると、異なる視点から問題を発見できます。Claude は論理的整合性、GPT はベストプラクティスに強い傾向があります。
-            </div>
-
-            <div class="tip-box">
-                <b>Tip 5:</b> うまくいかない時はモデルを変えてみましょう。<code>/model</code> コマンドで簡単に切り替えられます。
-            </div>
+            <br>
+            <p>
+                📖 全リソース一覧: <a href="https://github.com/github/awesome-copilot" target="_blank">github.com/github/awesome-copilot</a>
+            </p>
 
         </td>
     </tr>
