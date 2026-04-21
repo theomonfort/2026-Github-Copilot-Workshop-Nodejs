@@ -311,11 +311,6 @@
                 </tr>
             </table>
 
-            <br>
-            <p>
-                📖 全リソース一覧: <a href="https://github.com/github/awesome-copilot" target="_blank">github.com/github/awesome-copilot</a>
-            </p>
-
         </td>
     </tr>
 
