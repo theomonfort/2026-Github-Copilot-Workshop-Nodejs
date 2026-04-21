@@ -13,7 +13,7 @@
 ### レガシーサイトの起動
 
 ```bash
-cd hikari-legacy-php
+cd github-legacy
 php -S localhost:8080
 ```
 
