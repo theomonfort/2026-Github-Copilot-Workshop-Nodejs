@@ -22,5 +22,5 @@
     }
   },
   "forwardPorts": [5500, 8080],
-  "postCreateCommand": "gh extension install github/gh-copilot || true && npx playwright install chrome || true"
+  "postCreateCommand": "gh extension install github/gh-copilot || true && gh extension install github/gh-aw || true && npx playwright install chrome || true"
 }
