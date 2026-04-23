@@ -1,6 +1,6 @@
 {
   "name": "Node.js & PHP Workshop",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-20",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-22",
   "customizations": {
     "vscode": {
       "extensions": [
